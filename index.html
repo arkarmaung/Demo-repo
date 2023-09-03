@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #38444d;
+}
+
+li {
+  float: left;
+}
+li a, .dropbtn , ul.dropcontent li a{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown{
+}
+
+.dropcontent{
+	position: absolute;
+	min-width: 100px;
+	background-color: gray;
+	z-index: 1;
+	display: none;
+	overflow: hidden;
+}
+
+.dropcontent a{
+	color: black;
+	display: block;
+}
+
+.dropcontent a:hover{
+	color: white;
+	background-color: green;
+	display: block;
+}
+
+.dropdown:hover{
+	.dropcontent { display: block ;}
+}
+
+li > a:hover{
+	background-color: red;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown"><a href="#Drop" class="dropbtn">Dropdown</a>
+  	<div class="dropcontent">
+  		<a>Name</a>
+  		<a>Mother</a>
+		<a>father</a>
+  	</div>
+  </li>
+</ul>
+
+<h3>Dropdown Menu inside a Navigation Bar</h3>
+<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+
+</body>
+</html>
